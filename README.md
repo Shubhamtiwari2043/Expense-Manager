@@ -1,2 +1,2 @@
 # Expense-Manager
-The Expense Manager is a dynamic web application designed to help users track their expenses and manage their budget effectively. 
+The **Expense Manager** is a dynamic web application designed to help users track their expenses and manage their budget effectively. Users can enter a total budget and add various expenses with names and amounts. The application automatically sums up the expenses, calculates the remaining budget, and provides a visual representation through a pie chart. Additionally, users can export their expense data to an Excel file for further analysis. The intuitive interface and seamless functionality make it a valuable tool for personal financial management.
