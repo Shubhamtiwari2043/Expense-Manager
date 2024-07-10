@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <div class="input-section">
+            <input type="number" id="total-budget" placeholder="Total Budget">
+            <input type="text" id="expense-name" placeholder="Expense Name">
+            <input type="number" id="expense-amount" placeholder="Amount">
+            <button id="add-expense" class="btn">Add Expense</button>
+            
+        </div>
+        <table id="expense-table">
+            <thead>
+                <tr>
+                    <th>Expense Name</th>
+                    <th>Amount</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Expenses will be added here dynamically -->
+            </tbody>
+        </table>
+        <div class="total-section">
+            Total: $ <span id="total-amount">0.00</span>
+        </div>
+        <div class="remaining-section">
+            Remaining Budget: $ <span id="remaining-budget">0.00</span>
+        </div>
+        <button id="export-excel" class="btn-exl">Export to Excel</button>
+        <canvas id="expense-chart" width="500" height="500"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
